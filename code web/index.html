@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewort" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Hoàng Kim</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/3.jpg">
+            </div>
+            <div class="menu">
+                <li><a href="">Phong Thủy</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Phong Thủy Theo Yêu Cầu</a></li>
+                        <li><a href="">Phong Thủy Thầy Côi</a></li>
+                        <li><a href="">Phong Thủy Theo Shop</a>
+                            <ul>
+                                <li>Sim Làm Ăn</a></li>
+                                <li>Sim Học Hành</a></li>
+                                <li>Sim Sức Khỏe</a></li>
+                                <li>Sim Cầu Con Cái</a></li>
+                                <li>Sim Kinh Doanh</a></li>
+                                <li>Sim Cẩu Lộc</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Sim Nghe Gọi</a></li>                
+                <li><a href="">Sim số Đẹp</a></li>
+                <li><a href="">Sim Tình Nhân</a></li>
+                <li><a href="">Sim Thẩn Tài</a></li>
+                <li><a href="">Sim Tam Cô</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Tam cô 1</a></li>
+                        <li><a href="">Tam Cô 2</a></li>
+                        <li><a href="">Tam cô 3</a></li>
+                </li>
+            </ul>
+                <li><a href="">Sim Local</a>
+                    <ul class="sub-menu">
+                        <li><a href="">A0</a></li>
+                        <li><a href="">A50</a></li>
+                        <li><a href="">A79</a></li>
+                </li>
+            </ul>
+            </div>
+            <div class="others">
+              <li><input placeholder="Tìm Kiếm" type="text"> <i class="fas fa-search"></i></li>
+              <li><a class="fas fa-paw" href=""></a></li>
+              <li><a class="fas fa-user" href=""></a></li>
+              <li><a class="fas fa-shopping-bag" href=""></a></li>
+            </div>
+        </header>
+        <section id="Slider">
+        <div class="aspect-ratio-169">
+            <img src="images/hình1.jpg"> 
+            <img src="images/hình4.jpg">
+            <img src="images/hình4.jpg">
+            <img src="images/hình2.jpg">
+            <img src="images/hình5.jpg">
+        </div> 
+        <div class="dot-container">
+            <div class="dot.active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>   
+        </section>
+        </body>
+        <script>
+        const imgPosition = document.querySelectorAll("aspect_ratio_169 img")
+        const imgcontainer = document.querySelector('aspect_ratio_169')
+        let imgNuber = imgPosition.length
+        let index= 0
+       // console.log(imgPosition)
+       imgPosition.forEach(function(images,index){
+           images.style.left = index*100 + "%" 
+       })
+       function imgSlide (){
+        index++;
+        console.log(index)
+        if (index>=imgNuber) {index=0}
+        {imgContainer.style.left = "-" +index*100 + "%"}
+
+       }
+       setInterval(imgSlide,5000)
+
+
+
+       </script>
+       </html>
